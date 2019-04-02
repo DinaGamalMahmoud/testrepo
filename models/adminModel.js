@@ -15,6 +15,12 @@ const adminSchema =  new mongoose.Schema(
 const adminModel = mongoose.model('adminSchema',adminSchema)
 
 
+  const newUser = new adminModel({
+                       name: "yasmin",
+                        password: "12345"
+                    });
+                    newUser.save()
+                    .then(user => {})
 
 
 
